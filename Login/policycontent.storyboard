@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8bB-3I-dym">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--policycontent-->
+        <scene sceneID="EyB-y0-2qg">
+            <objects>
+                <viewController id="8bB-3I-dym" userLabel="policycontent" customClass="policycontent" customModule="Ecommerce" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="ebf-w5-mLM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGV-mg-rdN">
+                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tum-hS-u8c">
+                                        <rect key="frame" x="18" y="13" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="tum-hS-u8c" secondAttribute="height" multiplier="1:1" id="ClJ-We-J3o"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button" image="back">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="tpO-rk-jGG" kind="unwind" unwindAction="unwindToLoginFor:" id="XVO-YR-Cfp"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="隱私政策" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dg-ox-1hv" userLabel="Label">
+                                        <rect key="frame" x="53" y="13" width="269" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eye-Xd-qRu" userLabel="shopCart">
+                                        <rect key="frame" x="322" y="13" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Eye-Xd-qRu" secondAttribute="height" multiplier="1:1" id="uoX-f3-asp"/>
+                                        </constraints>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="FDw-U7-C13"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="13" left="18" bottom="8" right="18"/>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ubk-LR-0FK">
+                                <rect key="frame" x="8" y="84" width="359" height="575"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.30588235289999999" green="0.74509803919999995" blue="0.72941176470000002" alpha="0.8495023545" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.99991279840000002" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ubk-LR-0FK" firstAttribute="leading" secondItem="b3p-G6-HF1" secondAttribute="leading" constant="8" id="6tC-6z-RcL"/>
+                            <constraint firstItem="GGV-mg-rdN" firstAttribute="top" secondItem="b3p-G6-HF1" secondAttribute="top" id="CT4-jd-8dl"/>
+                            <constraint firstItem="ubk-LR-0FK" firstAttribute="top" secondItem="GGV-mg-rdN" secondAttribute="bottom" constant="8" id="Img-M4-mrG"/>
+                            <constraint firstItem="b3p-G6-HF1" firstAttribute="bottom" secondItem="ubk-LR-0FK" secondAttribute="bottom" constant="8" id="Ts3-dC-nbI"/>
+                            <constraint firstItem="GGV-mg-rdN" firstAttribute="trailing" secondItem="b3p-G6-HF1" secondAttribute="trailing" id="ZYN-ab-1NP"/>
+                            <constraint firstItem="b3p-G6-HF1" firstAttribute="trailing" secondItem="ubk-LR-0FK" secondAttribute="trailing" constant="8" id="eLH-ld-G0A"/>
+                            <constraint firstItem="GGV-mg-rdN" firstAttribute="leading" secondItem="b3p-G6-HF1" secondAttribute="leading" id="x8u-Jw-dgX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="b3p-G6-HF1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rtk-lK-Q1w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="tpO-rk-jGG" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="407" y="-138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="512" height="512"/>
+    </resources>
+</document>
