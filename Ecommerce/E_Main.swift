@@ -19,7 +19,7 @@ public class NSGetValue {
     }
     
     struct IP {
-        static let ip: String = "http://172.20.10.3:8080/";
+        static let ip: String = "http://127.0.0.1:8080/";
     }
     
     struct Php_Files {
